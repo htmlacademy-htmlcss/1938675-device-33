@@ -94,7 +94,6 @@ body {
 
 .slider-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -106,5 +105,20 @@ body {
 
 .slider-param-value {
   font-size: 36px;
+}
+
+.categories {
+  font-family: 'Raleway', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.categories-list {
+  list-style-type: none;
+}
+
+.categories-link {
+  text-decoration: none;
+  color: #000000;
 }
 
