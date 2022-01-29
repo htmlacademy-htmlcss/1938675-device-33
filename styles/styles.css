@@ -223,6 +223,10 @@ body {
   text-decoration: none;
 }
 
+.catalog-products {
+  background: #F0F0F0;
+}
+
 .catalog-filter {
   color: #000000;
 }
@@ -233,12 +237,12 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .catalog-filter-group {
   border: none;
   border-top: 2px solid #000000;
-  
 }
 
 .catalog-filter-group-title {
@@ -254,4 +258,33 @@ body {
 .control-input {
   font-size: 16px;
   line-height: 19px;
+}
+
+.select-control {
+  border: none;
+  background-color: inherit;
+}
+
+.product-list {
+  list-style-type: none;
+  background: #FFFFFF;
+}
+
+.product-card-link {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-image {
+  background-color: #F0F0F0;
+}
+
+.product-card-price {
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
 }
