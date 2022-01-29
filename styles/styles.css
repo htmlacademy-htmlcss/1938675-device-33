@@ -47,6 +47,10 @@ body {
   text-align: center;
 }
 
+.navigation-user, .navigation-site, .drop-down-submenu {
+  list-style-type: none;
+}
+
 .navigation-user-link {
   color: inherit;
   text-decoration: none;
@@ -69,3 +73,4 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
