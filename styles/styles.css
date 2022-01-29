@@ -30,6 +30,18 @@ body {
   color: #444444;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color:black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* pages */
 
 .page-header {
@@ -72,5 +84,27 @@ body {
   line-height: 18px;
   text-decoration: none;
   color: #000000;
+}
+
+.slider-number {
+  font-size: 180px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.slider-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.slider-param-title {
+ font-weight: 400;
+}
+
+.slider-param-value {
+  font-size: 36px;
 }
 
