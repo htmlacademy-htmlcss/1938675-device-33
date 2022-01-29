@@ -38,8 +38,10 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   color:#000000;
+  background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  border:none
 }
 
 /* pages */
@@ -219,4 +221,37 @@ body {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-filter {
+  color: #000000;
+}
+
+.catalog-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-group {
+  border: none;
+  border-top: 2px solid #000000;
+  
+}
+
+.catalog-filter-group-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.control-input {
+  font-size: 16px;
+  line-height: 19px;
 }
