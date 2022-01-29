@@ -171,6 +171,7 @@ body {
 .contacts-title {
   font-size: 24px;
 }
+
 .contacts-adress {
   font-style: normal;
 }
@@ -178,8 +179,33 @@ body {
 .contacts-tel {
   color: #444444;
 }
+
 .contacts-working-hours {
   list-style-type: none;
 }
-.contacts-working-hours-item {
+
+.subscribe {
+  background: #F0F0F0;
+}
+
+.subscribe-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.subscribe-field {
+  width: 557px;
+  height: 55px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: inherit;
+}
+
+.subscribe-button {
+  width: 253px;
+  height: 57px;
+  border: 3px solid #CECECE;
+  box-sizing: border-box;
 }
