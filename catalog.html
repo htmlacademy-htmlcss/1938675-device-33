@@ -82,25 +82,22 @@
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="catalog-filter-title">Фильтр:</h3>
+          <h3 class="catalog-filter-title catalog-title">Фильтр:</h3>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-group-title">Стоимость</legend>
-            <span class="catalog-filter-min-cost">от 0</span>
-            <input class="control-input" type="range" name="cost" min="0" max="8000" step="100" value="5000">
-            <span class="catalog-filter-select-cost">до 5000</span>
           </fieldset>
           <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-group-title">Цвет</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="black" checked>
+                <input class="control-input control-input-checked" type="checkbox" name="black" checked>
                 Черный
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="white" checked>
+                <input class="control-input control-input-checked" type="checkbox" name="white" checked>
                 Белый
               </label>
             </li>
@@ -123,28 +120,28 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-group-title">Bluetooth</legend>
-          <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="yes" checked>
-              Есть
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="no">
-              Нет
-                </label>
-              </li>
-            </ul>
-        </fieldset>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-group-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" value="yes" checked>
+                Есть
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" value="no">
+                Нет
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
           <button class="button" type="button">Показать</button>
         </form>
         <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="catalog-sorting-title">Сортировка</h3>
+          <h3 class="catalog-sorting-title catalog-title">Сортировка</h3>
           <select class="select-control">
             <option value="popular">Популярные</option>
           </select>
