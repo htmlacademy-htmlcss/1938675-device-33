@@ -359,6 +359,9 @@ body {
 }
 
 .footer-navigation-list {
+  display: flex;
+  width: 444px;
+  justify-content: space-between;
   list-style-type: none;
 }
 
@@ -372,6 +375,8 @@ body {
 }
 
 .footer-tel-link {
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 
@@ -379,6 +384,11 @@ body {
   margin: 0;
   margin-left: auto;
   padding: 0;
+}
+
+.academy-link {
+  width: 115px;
+  margin-left: 390px;
 }
 /* catalog */
 
