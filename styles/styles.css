@@ -215,6 +215,10 @@ body {
 }
 
 .categories-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -223,8 +227,21 @@ body {
   color: #000000;
 }
 
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-list {
+  width: 287px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.services-content {
+  width: 694px;
+  margin-right: 63px;
 }
 
 .button-current {
@@ -238,6 +255,16 @@ body {
   line-height: 23px;
   background: #F0F0F0;
   border-style: none;
+  width: 100%;
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company {
+  width: 520px;
 }
 
 .transport-companies-link {
@@ -245,6 +272,10 @@ body {
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.02em;
+}
+
+.contacts {
+  width: 532px;
 }
 
 .contacts-title {
