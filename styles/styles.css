@@ -52,6 +52,18 @@ body {
   border:none
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* pages */
 
 .page-header {
@@ -152,6 +164,20 @@ body {
   margin: 0 auto;
 }
 
+.promo-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-image {
+  width: 560px;
+}
+
+.slider-info {
+  width: 560px;
+}
+
+
 .slider-number {
   font-size: 180px;
   font-weight: 700;
@@ -163,6 +189,11 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider-pagination {
