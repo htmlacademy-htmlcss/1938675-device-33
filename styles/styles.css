@@ -303,6 +303,24 @@ body {
   margin: 0 auto;
 }
 
+.subscribe-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-title {
+  width: 348px;
+}
+
+.subscribe-description {
+  width: 560px;
+}
+
+.subscribe-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .subscribe-field {
   width: 557px;
   height: 55px;
@@ -328,10 +346,16 @@ body {
 }
 
 .adress-footer {
+  width: 239px;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+.footer-wrapper-raw {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-navigation-list {
@@ -343,10 +367,19 @@ body {
   color: #FFFFFF;
 }
 
+.footer-tel {
+  width: 175px;
+}
+
 .footer-tel-link {
   color: #FFFFFF;
 }
 
+.social-list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
 /* catalog */
 
 .breadcrumbs {
