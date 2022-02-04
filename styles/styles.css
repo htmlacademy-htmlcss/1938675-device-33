@@ -55,6 +55,8 @@ body {
 /* pages */
 
 .page-header {
+  width: 1160px;
+  margin: 0 auto;
   background-color: #FFE17F;
   color: #000000;
   list-style-type: none;
@@ -141,14 +143,19 @@ body {
   color: #000000;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .slider-number {
   font-size: 180px;
   font-weight: 700;
   color: #FFFFFF;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .title-main {
@@ -229,6 +236,11 @@ body {
   background: #F0F0F0;
 }
 
+.subscribe-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .subscribe-field {
   width: 557px;
   height: 55px;
@@ -246,6 +258,11 @@ body {
 
 .page-footer {
   background: #444444;
+}
+
+.page-footer-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .adress-footer {
