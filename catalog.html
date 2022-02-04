@@ -11,16 +11,21 @@
         <a>
           <img class="page-header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип Device">
         </a>
+        <div class="navigation-user-container">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <label class="search-icon" for="search-field"><span class="visually-hidden">Поиск по сайту</span></label>
           <input class="search-field" type="search" name="search-value" id="search-field" placeholder="Поиск по сайту" value="Текст поиска">
           <button class="search-button" type="button">Найти</button>
         </form>
-        <ul class="navigation-user">
+        <ul class="navigation-user navigation-user-login">
           <li class="navigation-user-item navigation-user-item-login">
+            <li class="navigation-user-item navigation-user-item-login">
             <a class="navigation-user-link navigation-user-link-logged " href="#">Коля Петухов</a>
             <button class="button-exit" type="button">Выйти</button>
           </li>
+          </li>
+        </ul>
+        <ul class="navigation-user navigation-user-list">
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
@@ -28,10 +33,11 @@
             <a class="navigation-user-link" href="#">Корзина</a>
           </li>
         </ul>
+        </div>
         <ul class="navigation-site">
           <li class="navigation-site-item navigation-site-item-catalog">
             <a class="navigation-site-link drop-down-menu" href="#">Каталог товаров</a>
-            <ul class="drop-down-submenu">
+            <ul class="drop-down-submenu" hidden>
               <li class="drop-down-submenu-item">
                 <a class="drop-down-submenu-link" href="#">Виртуальная реальность</a>
               </li>
@@ -55,16 +61,16 @@
           <li class="navigation-site-item">
             <a class="navigation-site-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-site-item">
+          <li class="navigation-site-item  navigation-site-item-align">
             <a class="navigation-site-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-site-item">
+          <li class="navigation-site-item navigation-site-item-align">
             <a class="navigation-site-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title title-main">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
@@ -80,6 +86,7 @@
         </ul>
       </header>
       <section class="catalog-products">
+        <div class="catalog-container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h3 class="catalog-filter-title catalog-title">Фильтр:</h3>
@@ -140,6 +147,7 @@
           </fieldset>
           <button class="button" type="button">Показать</button>
         </form>
+        <div class="catalog-right-column">
         <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="get">
           <h3 class="catalog-sorting-title catalog-title">Сортировка</h3>
           <select class="select-control">
@@ -208,18 +216,21 @@
             </li>
           </ul>
         </div>
+        </div>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
+      <div class="page-footer-container">
       <div class="page-footer-logo">
         <a>
           <img class="footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип Device">
         </a>
       </div>
+      <div class="footer-wrapper-raw">
       <address class="adress-footer">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </address>
-      <div class="footer-navigation">
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link button" href="#">Доставка</a>
@@ -231,11 +242,11 @@
             <a class="footer-navigation-link button" href="#">Контакты</a>
           </li>
         </ul>
-      </div>
       <div class="footer-tel">
         <a class="footer-tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
-      <div class="social">
+      </div>
+      <div class="footer-wrapper-raw">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy">
@@ -253,11 +264,10 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="logo-academy">
         <a class="academy-link" href="https://htmlacademy.ru/">
           <img class="logo-academy-img" src="images/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Академии">
         </a>
+      </div>
       </div>
     </footer>
   </body>
