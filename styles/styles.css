@@ -100,7 +100,7 @@ body {
 
 .navigation-user {
   margin: 0;
-  padding: 0;
+  padding: 5px 0;
 }
 
 .navigation-user-login {
@@ -121,7 +121,7 @@ body {
 .navigation-site {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
 }
 
 .navigation-site-item {
@@ -176,7 +176,6 @@ body {
 .slider-info {
   width: 560px;
 }
-
 
 .slider-number {
   font-size: 180px;
@@ -260,6 +259,8 @@ body {
   background: #F0F0F0;
   border-style: none;
   width: 100%;
+  margin: 70px 0;
+  padding: 40px 125px;
 }
 
 .company-info {
@@ -299,12 +300,14 @@ body {
 }
 
 .subscribe {
+  margin-top: 70px;
   background: #F0F0F0;
 }
 
 .subscribe-container {
   width: 1160px;
   margin: 0 auto;
+  padding: 64px 0 56px;
 }
 
 .subscribe-wrapper {
@@ -346,7 +349,7 @@ body {
 
 .page-footer-container {
   width: 1160px;
-  margin: 0 auto;
+  margin: 62px auto;
 }
 
 .footer-wrapper-raw {
