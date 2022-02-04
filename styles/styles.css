@@ -222,6 +222,10 @@ body {
   list-style-type: none;
 }
 
+.categories-item {
+  width: 160px;
+}
+
 .categories-link {
   text-decoration: none;
   color: #000000;
