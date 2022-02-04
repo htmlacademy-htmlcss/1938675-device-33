@@ -60,7 +60,18 @@ body {
   list-style-type: none;
 }
 
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-user-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-form {
+  width: 517px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -71,6 +82,21 @@ body {
 
 .navigation-user, .navigation-site, .drop-down-submenu {
   list-style-type: none;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user-login {
+  width: 231px;
+}
+
+.navigation-user-list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
 }
 
 .navigation-user-link {
