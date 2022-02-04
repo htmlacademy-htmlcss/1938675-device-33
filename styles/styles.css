@@ -349,20 +349,22 @@ body {
   margin: 0 auto;
 }
 
+.footer-wrapper-raw {
+  display: flex;
+}
+
 .adress-footer {
   width: 239px;
+  margin-right: 112px;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
 }
 
-.footer-wrapper-raw {
-  display: flex;
-  justify-content: space-between;
-}
-
 .footer-navigation-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 444px;
   justify-content: space-between;
@@ -376,6 +378,7 @@ body {
 
 .footer-tel {
   width: 175px;
+  margin-left: auto;
 }
 
 .footer-tel-link {
