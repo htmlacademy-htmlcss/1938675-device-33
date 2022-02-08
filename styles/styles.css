@@ -306,6 +306,7 @@ body {
 .slider-param {
   display: flex;
   flex-direction: column-reverse;
+  width: 307px;
 }
 
 .slider-param-title {
