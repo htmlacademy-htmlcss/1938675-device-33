@@ -39,6 +39,8 @@ body {
 }
 
 .button {
+  display: block;
+  padding: 10px 5px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -191,6 +193,7 @@ body {
   color: inherit;
   text-decoration: none;
   padding: 15px 0;
+  z-index: 1;
 }
 
 .drop-down-submenu {
@@ -217,6 +220,9 @@ body {
 .promo-slider {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: -20px;
+  height: 560px;
 }
 
 .slider-image {
@@ -224,13 +230,28 @@ body {
 }
 
 .slider-info {
+  position: relative;
   width: 560px;
+  padding-top: 123px;
+  padding-bottom: 38px;
 }
 
 .slider-number {
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 90px;
+  right: 49px;
+  z-index: -1;
   font-size: 180px;
   font-weight: 700;
+  text-align: end;
   color: #FFFFFF;
+}
+
+.slider-title {
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .title-main {
@@ -240,21 +261,61 @@ body {
   color: #000000;
 }
 
+.slider-description {
+  margin: 0;
+  margin-bottom: 51px;
+}
+
 .slider-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 49px;
 }
 
 .slider-pagination {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  max-width: 300px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-pagination-item {
+  margin-right: 20px;
+}
+
+.slider-pagination-item:last-child {
+  margin-right: 0px;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background: inherit;
+  padding: 0;
+}
+
+.slider-pagination-button-current {
+  background: #000000;
+}
+
+.slider-param {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .slider-param-title {
- font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .slider-param-value {
   font-size: 36px;
+  color: #000000;
 }
 
 .categories {
