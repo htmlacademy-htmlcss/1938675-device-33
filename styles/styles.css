@@ -384,6 +384,24 @@ body {
   list-style-type: none;
 }
 
+.services-item {
+  margin-bottom: 35px;
+  padding: 10px 0;
+}
+
+.services-item:last-child {
+  margin-bottom: 0;
+}
+
+.button-services {
+  width: 160px;
+}
+
+.button-current {
+  background: #000000;
+  color: #FFE17F;
+}
+
 .services-content {
   width: 694px;
   margin-right: 63px;
@@ -396,23 +414,6 @@ body {
 
 .services-content-description {
   margin: 0;
-}
-
-.services-item {
-  margin-bottom: 35px;
-}
-
-.services-item:last-child {
-  margin-bottom: 0;
-}
-
-.button-services {
-  text-align: start;
-}
-
-.button-current {
-  background: #000000;
-  color: #FFE17F;
 }
 
 .button-delivery {
@@ -434,6 +435,25 @@ body {
 
 .about-company {
   width: 520px;
+  padding-top: 47px;
+  padding-right: 23px;
+}
+
+.about-company-title {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.about-company-description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.transport-companies {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 38px;
+  list-style-type: none;
 }
 
 .transport-companies-link {
@@ -441,18 +461,32 @@ body {
   font-weight: 700;
   color: #000000;
   letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.button-about-company {
+  width: 270px;
 }
 
 .contacts {
   width: 532px;
+  padding-top: 47px;
+  padding-right: 23px;
 }
 
 .contacts-title {
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts-adress {
   font-style: normal;
+  margin-bottom: 30px;
+}
+
+.contacts-location {
+  margin: 0;
 }
 
 .contacts-tel {
@@ -460,7 +494,14 @@ body {
 }
 
 .contacts-working-hours {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
   list-style-type: none;
+}
+
+.button-write-us {
+  width: 259px;
 }
 
 .subscribe {
