@@ -582,11 +582,24 @@ body {
   margin: 62px auto;
 }
 
+.page-footer-logo {
+  margin-bottom: 35px;
+}
+
+.footer-logo {
+  display: block;
+  width: 145px;
+  height: 36px;
+
+}
+
 .footer-wrapper-raw {
   display: flex;
+  margin-bottom: 49px;
 }
 
 .adress-footer {
+  display: inline;
   width: 239px;
   margin-right: 112px;
   font-style: normal;
@@ -602,6 +615,14 @@ body {
   width: 444px;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.footer-navigation-item {
+  margin-right: 25px;
+}
+
+.footer-navigation-item:last-child {
+  margin-right: 0;
 }
 
 .footer-navigation-link {
