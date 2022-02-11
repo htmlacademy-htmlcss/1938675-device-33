@@ -145,20 +145,22 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="button" type="button">Показать</button>
+          <button class="button-show-filter button" type="button">Показать</button>
         </form>
         <div class="catalog-right-column">
         <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="catalog-sorting-title catalog-title">Сортировка</h3>
+          <h3 class="catalog-sorting-title catalog-title">Сортировка:</h3>
           <select class="select-control">
             <option value="popular">Популярные</option>
           </select>
-          <button class="button-sort-up" type="button">
-            <span class="visually-hidden">Сортировать по возрастанию</span>
-          </button>
-          <button class="button-sort-down" type="button">
-            <span class="visually-hidden">Сортировать по убыванию</span>
-          </button>
+          <div class="button-sort-container">
+            <button class="button-sort button-sort-up" type="button">
+              <span class="visually-hidden">Сортировать по возрастанию</span>
+            </button>
+            <button class="button-sort button-sort-down" type="button">
+              <span class="visually-hidden">Сортировать по убыванию</span>
+            </button>
+          </div>
         </form>
         <div class="product-cards">
           <ul class="product-list">

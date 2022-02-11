@@ -280,6 +280,7 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
 }
 
 .slider-description {
@@ -674,14 +675,32 @@ body {
   width: 115px;
   margin-left: 390px;
 }
+
 /* catalog */
+
 .inner-header {
   width: 1040px;
-  margin: 0 auto;
+  margin: 45px auto 0;
+}
+
+.inner-header-title {
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
+  display: flex;
   list-style-type: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {
@@ -693,15 +712,18 @@ body {
 
 .catalog-products {
   background: #F0F0F0;
+
 }
 
 .catalog-container {
   display: flex;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
 }
 
 .catalog-filter {
+  box-sizing: border-box;
   width: 320px;
   padding-top: 25px;
   padding-left: 60px;
@@ -716,6 +738,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
 }
 
 .catalog-filter-group {
@@ -738,8 +761,30 @@ body {
   line-height: 19px;
 }
 
+.button-show-filter {
+  background-color: inherit;
+}
+
 .catalog-right-column {
   width: 840px;
+}
+
+.catalog-sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.button-sort-container {
+  display: flex;
+}
+
+.button-sort {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
 }
 
 .select-control {
@@ -749,10 +794,12 @@ body {
 
 .product-cards {
   background: #FFFFFF;
+  padding: 70px 40px 78px;
 }
 
 .product-list {
   margin: 0;
+  margin-bottom: 44px;
   padding: 70px 40px 0px;
   list-style-type: none;
 }
@@ -782,11 +829,17 @@ body {
   width: 760px;
   height: 55px;
   border: 3px solid #E5E5E5;
+  margin-bottom: 44px;
 }
 
 .pagination {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
   background-color: #EBEBEB;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -799,7 +852,17 @@ body {
 }
 
 .pagination-prev, .pagination-next {
+  display: block;
   background-color: inherit;
   color: #000000;
   opacity: 1;
+  padding: 25px;
+}
+
+.pagination-prev {
+  margin-right: 145px;
+}
+
+.pagination-next {
+  margin-left: 145px;
 }
