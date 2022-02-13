@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a>
+        <a class="navigation-logo">
           <img class="page-header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип Device">
         </a>
         <div class="navigation-user-container">
@@ -19,10 +19,10 @@
         </form>
         <ul class="navigation-user navigation-user-login">
           <li class="navigation-user-item navigation-user-item-login">
-            <li class="navigation-user-item navigation-user-item-login">
             <a class="navigation-user-link navigation-user-link-logged " href="#">Коля Петухов</a>
-            <button class="button-exit" type="button">Выйти</button>
           </li>
+          <li class="navigation-user-item navigation-user-item-login">
+            <a class="navigation-user-link navigation-user-link-exit">Выйти</a>
           </li>
         </ul>
         <ul class="navigation-user navigation-user-list">
@@ -145,20 +145,22 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="button" type="button">Показать</button>
+          <button class="button-show-filter button" type="button">Показать</button>
         </form>
         <div class="catalog-right-column">
         <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="get">
-          <h3 class="catalog-sorting-title catalog-title">Сортировка</h3>
+          <h3 class="catalog-sorting-title catalog-title">Сортировка:</h3>
           <select class="select-control">
             <option value="popular">Популярные</option>
           </select>
-          <button class="button-sort-up" type="button">
-            <span class="visually-hidden">Сортировать по возрастанию</span>
-          </button>
-          <button class="button-sort-down" type="button">
-            <span class="visually-hidden">Сортировать по убыванию</span>
-          </button>
+          <div class="button-sort-container">
+            <button class="button-sort button-sort-up" type="button">
+              <span class="visually-hidden">Сортировать по возрастанию</span>
+            </button>
+            <button class="button-sort button-sort-down" type="button">
+              <span class="visually-hidden">Сортировать по убыванию</span>
+            </button>
+          </div>
         </form>
         <div class="product-cards">
           <ul class="product-list">
@@ -223,11 +225,11 @@
     <footer class="page-footer">
       <div class="page-footer-container">
       <div class="page-footer-logo">
-        <a>
-          <img class="footer-logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип Device">
+        <a class="footer-logo">
+          <img src="images/logo-footer.svg" width="145" height="36" alt="Логотип Device">
         </a>
       </div>
-      <div class="footer-wrapper-raw">
+      <div class="footer-wrapper-raw-first">
       <address class="adress-footer">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </address>
@@ -246,7 +248,7 @@
         <a class="footer-tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
       </div>
-      <div class="footer-wrapper-raw">
+      <div class="footer-wrapper-raw-second">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy">
