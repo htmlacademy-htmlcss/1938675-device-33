@@ -806,15 +806,31 @@ body {
   list-style-type: none;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-title-link {
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -0.02em;
-  color: #000000;
   text-decoration: none;
 }
 
+.product-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0;
+  max-width: 230px;
+}
+
 .product-card-image {
+  margin-bottom: 32px;
   background-color: #F0F0F0;
 }
 
