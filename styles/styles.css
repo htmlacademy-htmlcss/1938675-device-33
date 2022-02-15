@@ -326,8 +326,6 @@ body {
 }
 
 .slider-param {
-  display: flex;
-  flex-direction: column-reverse;
   width: 307px;
 }
 
@@ -798,13 +796,17 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 44px;
   margin: 0;
+  padding: 0;
   margin-bottom: 44px;
-  padding: 70px 40px 0px;
   list-style-type: none;
 }
 
-.product-card-link {
+.product-card-title-link {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
