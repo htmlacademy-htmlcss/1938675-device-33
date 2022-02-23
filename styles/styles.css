@@ -276,10 +276,6 @@ body {
   padding: 0;
 }
 
-.slider-button-icon {
-
-}
-
 .slider-prev {
   margin-right: auto;
 }
@@ -305,17 +301,17 @@ body {
   color: #FFFFFF;
 }
 
-.slider-title {
-  margin: 0;
-  margin-bottom: 29px;
-}
-
 .title-main {
   font-family: 'Raleway', sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
   margin: 0;
+}
+
+.slider-title {
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .slider-description {
@@ -393,18 +389,15 @@ body {
   width: 160px;
 }
 
-.categories-link::before {
-  content: "";
-  display: block;
-  width: 160px;
-  height: 160px;
-  background-color: #FFE17F;
-  margin-bottom: 33px;
-}
-
 .categories-link {
+  position: relative;
   text-decoration: none;
   color: #000000;
+}
+
+.categories-image {
+  margin-bottom: 32px;
+  background-color: #FFE17F;
 }
 
 .services {
