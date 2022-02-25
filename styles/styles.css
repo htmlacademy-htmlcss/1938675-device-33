@@ -274,6 +274,7 @@ body {
   background-color: inherit;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .slider-prev {
@@ -350,6 +351,7 @@ body {
   border-radius: 50%;
   background: inherit;
   padding: 0;
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
@@ -493,6 +495,7 @@ body {
 }
 
 .button-delivery {
+  position: relative;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 23px;
