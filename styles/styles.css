@@ -242,7 +242,7 @@ body {
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
-  margin-top: -151px;
+  margin-top: -144px;
 }
 
 .promo-slider {
@@ -400,11 +400,11 @@ body {
   background-color: #FFE17F;
 }
 
-.services-container::before {
+.services::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -20px;
+  top: 102px;
   z-index: -1;
   width: 100vw;
   height: 289px;
@@ -413,7 +413,7 @@ body {
 
 .services {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 142px;
 }
 
 .services-container {
@@ -430,9 +430,12 @@ body {
   width: 7px;
   height: 319px;
   background-color: #000000;
+  right: 0;
+  top: 0;
 }
 
 .services-list {
+  position: relative;
   width: 287px;
   margin: 0;
   padding: 65px 0;
@@ -441,7 +444,6 @@ body {
 
 .services-item {
   margin-bottom: 35px;
-  padding: 10px 0;
 }
 
 .services-item:last-child {
@@ -450,6 +452,18 @@ body {
 
 .button-services {
   width: 160px;
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color:#000000;
+  background-color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button-current {
@@ -460,6 +474,13 @@ body {
 .services-content {
   width: 694px;
   margin-right: 63px;
+  background-image: url(/images/delivery-man-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.services-content-wrapper {
+  width: 452px;
 }
 
 .services-content-title {
