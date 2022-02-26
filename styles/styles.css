@@ -341,14 +341,14 @@ body {
   background-color: #FFE17F;
   width: 1160px;
   height: 300px;
-  margin-top: -144px;
+  margin-top: -150px;
 }
 
 .promo-slider {
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -20px;
+  top: -15px;
   height: 560px;
   margin-bottom: 50px;
 }
@@ -376,10 +376,22 @@ body {
   cursor: pointer;
 }
 
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .slider-prev {
   margin-right: auto;
 }
-
 
 .slider-info {
   position: relative;
@@ -392,7 +404,7 @@ body {
   display: block;
   width: 250px;
   position: absolute;
-  top: 90px;
+  top: 84px;
   right: 49px;
   z-index: -1;
   font-size: 180px;
@@ -451,6 +463,19 @@ body {
   background: inherit;
   padding: 0;
   cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .slider-button-see-more {
@@ -516,6 +541,18 @@ body {
   color: #000000;
 }
 
+.categories-link:hover .categories-image{
+  background-color: #FFC700;
+}
+
+.categories-link:active {
+  opacity: 0.3;
+}
+
+.categories-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
 .categories-image {
   margin-bottom: 32px;
   background-color: #FFE17F;
