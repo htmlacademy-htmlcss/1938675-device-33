@@ -671,13 +671,22 @@ body {
   position: relative;
   font-size: 20px;
   line-height: 23px;
-  background: #F0F0F0;
-  border-style: none;
+  background-color: #F0F0F0;
   width: 100%;
   height: 100px;
   margin: 0 0 70px;
   padding: 40px 125px;
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color:#000000;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-delivery:active {
+  opacity: 0.3;
 }
 
 .button-delivery-icon {
@@ -752,6 +761,20 @@ body {
   position: relative;
   margin-bottom: 19px;
   padding-left: 38px;
+  cursor: pointer;
+}
+
+.transport-companies-item:hover {
+  opacity: 0.6;
+}
+
+.transport-companies-item:active {
+  opacity: 0.3;
+}
+
+.transport-companies-item:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .transport-companies-link {
@@ -802,6 +825,19 @@ body {
 
 .contacts-tel {
   color: #444444;
+}
+
+.contacts-tel:hover {
+  opacity: 0.6;
+}
+
+.contacts-tel:active {
+  opacity: 0.3;
+}
+
+.contacts-tel:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .contacts-working-hours {
@@ -1071,13 +1107,17 @@ body {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .social-item {
+  width: 40px;
+  height: 40px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .social-item:last-child {
@@ -1085,8 +1125,36 @@ body {
 }
 
 .social-link {
+  display: flex;
+  z-index: -1;
   width: 40px;
   height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-link:hover {
+  background-color: #FFC700;
+}
+
+.social-link:active {
+  background-color: #FFC700;
+}
+
+.social-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.social-icon {
+  display: block;
+  margin: auto;
+}
+
+.social-icon:active {
+  fill-opacity: 0.3;
 }
 
 .academy-link {
