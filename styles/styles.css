@@ -1106,7 +1106,19 @@ body {
   outline-offset: 2px;
 }
 
+.footer-wrapper-raw-second::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
 .footer-wrapper-raw-second {
+  position: relative;
   display: flex;
   justify-content: end;
   align-content: flex-end;
