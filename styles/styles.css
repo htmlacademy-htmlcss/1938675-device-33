@@ -711,6 +711,19 @@ body {
   padding: 30px 42px;
 }
 
+.button-delivery:hover .button-delivery-icon-background {
+  fill: #FFC700;
+  }
+
+.button-delivery:hover .button-delivery-info-i {
+  opacity: 1;
+}
+
+.button-delivery:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 /* о компании */
 
 .company-info {
