@@ -1172,8 +1172,8 @@ body {
   background-color: #FFC700;
 }
 
-.social-link:active {
-  background-color: #FFC700;
+.social-link:active svg {
+  fill-opacity: 0.3;
 }
 
 .social-link:focus {
@@ -1184,10 +1184,6 @@ body {
 .social-icon {
   display: block;
   margin: auto;
-}
-
-.social-icon:active {
-  fill-opacity: 0.3;
 }
 
 .academy-link {
