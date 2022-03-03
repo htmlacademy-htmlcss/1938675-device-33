@@ -227,6 +227,10 @@ body {
   outline-offset: 2px;
 }
 
+.navigation-user-link-exit {
+  opacity: 0.3;
+}
+
 .busket-count {
   display: block;
   text-align: center;
@@ -258,7 +262,6 @@ body {
 
 .navigation-site-item {
   width: 127px;
-  
 }
 
 .navigation-site-item-catalog {
@@ -1225,16 +1228,33 @@ body {
 }
 
 .breadcrumbs-item {
+  position: relative;
   margin-right: 36px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -18px;
+  width: 4px;
+  height: 7px;
+  background-image: url(/images/bredcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-item:last-child {
   margin-right: 0;
 }
 
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 .breadcrumbs-link {
-  font-size: 16px;
-  line-height: 19px;
   color: #000000;
   text-decoration: none;
 }
