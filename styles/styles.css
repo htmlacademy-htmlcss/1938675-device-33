@@ -1514,8 +1514,12 @@ body {
   opacity: 0.6;
 }
 
-.product-card:active {
-  
+.product-card:active .product-card-button::before {
+  background-color: #FFC700;
+}
+
+.product-card:active .product-card-content {
+  opacity: 0.3;
 }
 
 .product-card:focus-within {
