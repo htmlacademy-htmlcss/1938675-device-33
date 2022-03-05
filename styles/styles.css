@@ -1531,6 +1531,8 @@ body {
   outline: none;
 }
 
+/* пагинация под каталогом */
+
 .button-pagination-show-more {
   font-size: 16px;
   line-height: 19px;
@@ -1568,10 +1570,12 @@ body {
   padding: 0;
 }
 
-/* .pagination-item {
+.pagination-item {
   width: 40px;
   height: 40px;
-} */
+  text-align: center;
+  cursor: pointer;
+}
 
 .pagination-link {
   display: block;
@@ -1610,6 +1614,25 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-prev {
+  margin-right: 145px;
+}
+
+.pagination-next {
+  margin-left: 145px;
+}
+
+.pagination-disabled {
+  visibility: hidden;
+}
+
+.pagination-link-current {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* состояния для кнопок в пагинации */
+
 .pagination-prev:hover, .pagination-next:hover {
   background-color: #DCDCDC;
 }
@@ -1624,14 +1647,7 @@ body {
   outline-offset: 2px;
 }
 
-.pagination-prev {
-  margin-right: 145px;
-}
-
-.pagination-next {
-  margin-left: 145px;
-}
-
-.pagination-disabled {
-  display: none;
+.pagination-link-current:hover {
+  opacity: 0.6;
+  cursor: default;
 }
