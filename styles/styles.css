@@ -337,7 +337,7 @@ body {
 
 /* слайдер */
 
-.promo-slider::before {
+.slider-container::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -347,13 +347,17 @@ body {
   margin-top: -150px;
 }
 
-.promo-slider {
-  display: flex;
+.slider-container {
+  display: none;
   justify-content: space-between;
   position: relative;
   top: -15px;
   height: 560px;
   margin-bottom: 50px;
+}
+
+.slider-current {
+  display: flex;
 }
 
 .slider-image {
@@ -503,7 +507,7 @@ body {
 }
 
 .slider-param {
-  width: 307px;
+  text-align: left;
 }
 
 .slider-param-first-raw {
