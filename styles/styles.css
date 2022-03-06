@@ -319,7 +319,7 @@ body {
 }
 
 .drop-down-submenu-container {
-  display: flex;
+  display: none;
   width: 1100px;
   position: absolute;
   top: 20px;
@@ -344,9 +344,33 @@ body {
 .drop-down-submenu-link {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-decoration: none;
   color: #000000;
+  padding-bottom: 2px;
+}
+
+.drop-down-submenu-link-current {
+  border-bottom: 1px solid #000000;
+}
+
+.drop-down-submenu-link:hover {
+  opacity: 0.6;
+}
+
+.drop-down-submenu-link:active {
+  opacity: 0.3;
+}
+
+.drop-down-submenu-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+/* состояния кнопки каталог */
+
+.navigation-site-item-catalog:focus-within .drop-down-submenu-container {
+  display: flex;
 }
 
 .main-container {
@@ -360,21 +384,23 @@ body {
 
 /* слайдер */
 
+.promo-slider {
+  position: relative;
+  top: -15px;
+}
+
 .slider-container::before {
   content: '';
   position: absolute;
   z-index: -1;
   background-color: #FFE17F;
   width: 1160px;
-  height: 300px;
-  margin-top: -150px;
+  height: 152px;
 }
 
 .slider-container {
   display: none;
   justify-content: space-between;
-  position: relative;
-  top: -15px;
   height: 560px;
   margin-bottom: 50px;
 }
