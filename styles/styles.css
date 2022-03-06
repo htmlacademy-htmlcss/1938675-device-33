@@ -619,6 +619,7 @@ body {
 
 .services-item {
   margin-bottom: 35px;
+  color: #000000;
 }
 
 .services-item:last-child {
@@ -648,7 +649,7 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center;
   letter-spacing: 0.2em;
-  color:#000000;
+  color: inherit;
   background-color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -659,16 +660,55 @@ body {
   color: #FFE17F;
 }
 
+/* состояния кнопок */
+
+.services-item:hover .button-services::before {
+  height: 100%;
+}
+
+.services-item:active .button-services::before {
+  height: 100%;
+  background-color: #FFCC33;
+}
+
+.button-services:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .services-content {
+  margin: 0;
+  padding: 0;
   width: 694px;
   margin-right: 63px;
+  list-style-type: none;
+}
+
+.services-content-wrapper {
+  display: none;
+  padding-right: 242px;
+}
+
+.services-content-current {
+  display: block;
+}
+
+.services-delivery {
   background-image: url(/images/delivery-man-icon.svg);
   background-repeat: no-repeat;
   background-position: right center;
 }
 
-.services-content-wrapper {
-  width: 452px;
+.services-warranty {
+  background-image: url(/images/warranty-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.services-credit {
+  background-image: url(/images/credit-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .services-content-title {
