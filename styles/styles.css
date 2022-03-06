@@ -312,6 +312,13 @@ body {
   right: 0;
 }
 
+.drop-down-menu {
+  padding: 15px 57px 15px 0;
+  background-image: url(/images/catalog-close.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .drop-down-submenu {
   list-style-type: none;
   padding: 0;
@@ -368,6 +375,10 @@ body {
 }
 
 /* состояния кнопки каталог */
+
+.navigation-site-item-catalog:focus-within .drop-down-menu {
+  background-image: url(/images/catalog-open.svg);
+}
 
 .navigation-site-item-catalog:focus-within .drop-down-submenu-container {
   display: flex;
