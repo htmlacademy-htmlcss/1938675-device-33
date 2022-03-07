@@ -1417,6 +1417,10 @@ body {
   margin: 0;
 }
 
+.catalog-filter-title {
+  margin-bottom: 60px;
+}
+
 .catalog-filter-group {
   position: relative;
   margin: 0;
@@ -1428,7 +1432,7 @@ body {
 .catalog-filter-group-title::before {
   content: "";
   position: absolute;
-  top: -12px;
+  top: 0;
   width: 100%;
   height: 2px;
   background-color: #000000;
@@ -1438,10 +1442,18 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  padding-top: 12px;
 }
 
 .catalog-filter-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .control-input {
@@ -1460,9 +1472,25 @@ body {
 
 .range-bar {
   position: absolute;
+  display: flex;
   height: 2px;
   background-color: #000000;
 }
+
+.range-wrapper {
+  position: absolute;
+  top: -8px;
+}
+
+.range-wrapper-min {
+  left: -9px;
+}
+
+.range-wrapper-max {
+  right: -9px;
+}
+
+/* кружочки на ренж-баре */
 
 .range-toggle {
   position: absolute;
@@ -1487,7 +1515,7 @@ body {
   outline-offset: 2px;
 } 
 
-.toggle-min {
+/* .toggle-min {
   top: -8px;
   left: -9px;
 }
@@ -1495,19 +1523,22 @@ body {
 .toggle-max {
   top: -8px;
   right: -9px;
-}
+} */
 
-.range-wrapper-inputs {
-  display: flex;
-  justify-content: center;
+/* подписи к кружочкам */
+
+.catalog-filter-label {
   font-size: 15px;
   line-height: 18px;
   opacity: 0.3;
 }
 
-.catalog-filter-label {
-  display: flex;
-  margin-right: 5px;
+.catalog-filter-label-min {
+  
+}
+
+.catalog-filter-label-max {
+
 }
 
 .range-input {
@@ -1526,8 +1557,65 @@ body {
   margin: 0;
 }
 
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-image: url(/images/filter-check.svg);
+  content: "";
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+}
+
+/* Label */
+.control-label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .button-show-filter {
   background-color: inherit;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
 /* каталог */
