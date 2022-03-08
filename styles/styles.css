@@ -1359,6 +1359,89 @@ body {
   width: 760px;
 }
 
+.modal-content {
+  position: relative;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 12px;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url(/images/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+/* попап-форма */
+
+.modal-delivery-form {
+}
+
+.modal-delivery-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.modal-field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.modal-field-group:last-child {
+  margin-right: 0;
+}
+
+.modal-delivery-form-name {
+  width: 360px;
+}
+
+.modal-form-label {
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+
+.modal-field {
+  background-color: #F0F0F0;
+  border: none;
+  padding: 20px;
+}
+
+.modal-delivery-form-email {
+  flex-grow: 1;
+}
+
+.modal-delivery-form-comment {
+  flex-grow: 1;
+}
+
+.modal-delivery-form-quantity {
+  width: 180px;
+}
+
+.modal-delivery-submit {
+  width: 200px;
+}
+
 /* catalog */
 
 .inner-header {

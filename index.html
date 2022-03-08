@@ -493,12 +493,44 @@
     </footer>
     <div class="modal-container">
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-delivery-row">
+              <p class="modal-field-group modal-delivery-form-name">
+                <label class="modal-form-label" for="modal-delivery-name">
+                  Ваше имя:
+                </label>
+                <input class="modal-field" type="text" id="modal-delivery-name" name="modal-delivery-name" placeholder="Введите имя">
+              </p>
+              <p class="modal-field-group modal-delivery-form-email">
+                <label class="modal-form-label" for="modal-delivery-email">
+                  Ваш e-mail:
+                </label>
+                <input class="modal-field" type="email" id="modal-delivery-email" name="modal-delivery-email" placeholder="Введите e-mail" value="почта">
+              </p>
+            </div>
+            <div class="modal-delivery-row">
+              <p class="modal-field-group modal-delivery-form-comment">
+                <label class="modal-form-label" for="modal-delivery-comment">
+                  Что нужно привезти:
+                </label>
+                <input class="modal-field" type="text" id="modal-delivery-comment" name="modal-delivery-comment" placeholder="В свободной форме">
+              </p>
+              <p class="modal-field-group modal-delivery-form-quantity">
+                <label class="modal-form-label" for="modal-delivery-quantity">
+                  Количество:
+                </label>
+                <input class="modal-field" type="number" id="modal-delivery-quantity" name="modal-delivery-quantity">
+              </p>
+            </div>
+            <button class="button modal-delivery-submit" type="submit">Отправить</button>
+          </form>
         </section>
+        
       </div>
     </div>
   </body>
