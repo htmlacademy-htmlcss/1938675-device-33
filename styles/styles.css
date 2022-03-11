@@ -82,7 +82,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -164,7 +165,8 @@ img {
   background-repeat: no-repeat;
   background-position: 16px 50%;
   background-size: 16px 16px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .search-field[type="text"]::-ms-clear {
@@ -1537,7 +1539,8 @@ img {
 
 .modal-field[type="number"]::-webkit-inner-spin-button,
 .modal-field[type="number"]::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .quantity-block {
@@ -1893,12 +1896,14 @@ img {
   text-align: center;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -2055,7 +2060,8 @@ img {
   background-image: url("/images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
