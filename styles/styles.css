@@ -197,10 +197,6 @@ body {
   display: block;
 }
 
-.navigation-user {
-  padding: 5px 0;
-}
-
 .navigation-user-item {
   position: relative;
 }
@@ -216,18 +212,23 @@ body {
   max-width: 150px;
 }
 
+.navigation-user-item-cart {
+  margin-left: 33px;
+}
+
 .navigation-user-list {
   display: flex;
-  justify-content: space-between;
-  width: 240px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 250px;
 }
 
 .navigation-user-link {
   display: block;
   position: relative;
-  height: 30px;
   color: inherit;
   text-decoration: none;
+  padding: 5px 0;
 }
 
 .navigation-user-link:hover {
@@ -263,7 +264,7 @@ body {
 }
 
 .navigation-icon {
-  margin-right: 12px;
+  margin-right: 7px;
 }
 
 .navigation-site {
@@ -397,6 +398,11 @@ body {
   flex-grow: 1;
 }
 
+.main-index {
+  position: relative;
+  top: -15px;
+}
+
 .page-container {
   width: 1160px;
   margin: 0 auto;
@@ -405,8 +411,7 @@ body {
 /* слайдер */
 
 .promo-slider {
-  position: relative;
-  top: -15px;
+  margin-bottom: 70px;
 }
 
 .slider-container::before {
@@ -422,7 +427,6 @@ body {
   display: none;
   justify-content: space-between;
   height: 560px;
-  margin-bottom: 50px;
 }
 
 .slider-current {
@@ -430,6 +434,7 @@ body {
 }
 
 .slider-image {
+  position: relative;
   width: 560px;
 }
 
@@ -438,8 +443,8 @@ body {
   justify-content: end;
   width: 530px;
   height: 60px;
-  position: relative;
-  top: -350px;
+  position: absolute;
+  top: 213px;
   left: 30px;
   z-index: 1;
 }
@@ -510,7 +515,7 @@ body {
 .slider-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
 }
 
 .slider-pagination {
@@ -555,15 +560,17 @@ body {
 }
 
 .slider-button-see-more {
-  width: 220px;
+  width: 210px;
 }
 
-.slider-button-see-more:hover {
+.slider-button-see-more:hover::before {
   background-color: #FFE17F;
+  height: 100%;
 }
 
-.slider-button-see-more:active {
+.slider-button-see-more:active::before {
   background-color: #FFCC33;
+  height: 100%;
 }
 
 .slider-button-see-more:focus {
@@ -573,6 +580,10 @@ body {
 
 .slider-pagination-button-current {
   background: #000000;
+}
+
+.slider-info table {
+  border-spacing: 0;
 }
 
 .slider-param {
@@ -612,7 +623,9 @@ body {
 }
 
 .categories-item {
+  box-sizing: border-box;
   width: 160px;
+  padding-bottom: 6px;
 }
 
 .categories-link {
@@ -635,7 +648,7 @@ body {
   outline-offset: 2px;
 }
 .categories-image {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   background-color: #FFE17F;
 }
 
@@ -870,6 +883,8 @@ body {
 
 .transport-companies {
   margin-bottom: 30px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .transport-companies-item::before {
@@ -906,15 +921,13 @@ body {
 }
 
 .transport-companies-link {
-  line-height: 20px;
-  font-weight: 700;
   color: #000000;
   letter-spacing: -0.02em;
   text-decoration: none;
 }
 
 .button-about-company {
-  width: 270px;
+  width: 260px;
 }
 
 .button-about-company:hover {
@@ -968,13 +981,13 @@ body {
 
 .contacts-working-hours {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
 }
 
 .button-write-us {
-  width: 259px;
+  width: 250px;
 }
 
 .button-write-us:hover {
@@ -1013,6 +1026,7 @@ body {
   width: 348px;
   margin: 0;
   margin-right: 152px;
+  margin-left: 7px;
 }
 
 .subscribe-description {
@@ -1066,7 +1080,6 @@ body {
   height: 57px;
   border: 3px solid #CECECE;
   cursor: pointer;
-  padding: 18px 39px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1108,6 +1121,8 @@ body {
 
 .page-footer {
   background: #444444;
+  position: relative;
+  top: -15px;
 }
 
 .page-footer-container {
@@ -1156,16 +1171,14 @@ body {
 
 .footer-navigation-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 572px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  margin-top: 3px;
 }
 
 .footer-navigation-item {
-  margin-right: 25px;
+  margin-right: 32px;
 }
 
 .footer-navigation-item:last-child {
@@ -1173,14 +1186,12 @@ body {
 }
 
 .footer-navigation-link {
-  position: relative;
   background-color: inherit;
   color: #FFFFFF;
   display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
